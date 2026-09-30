@@ -1,0 +1,64 @@
+/* Glow Animation */
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 8px #38bdf8, 0 0 18px #38bdf8; }
+    50% { text-shadow: 0 0 18px #818cf8, 0 0 30px #818cf8; }
+}
+.glow-text {
+    animation: glow 3s infinite alternate;
+}
+
+/* Typewriter Text Animation */
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #38bdf8; }
+}
+.typewriter-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #38bdf8;
+    animation: typewriter 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    display: inline-block;
+}
+
+/* Float & Bounce Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+.float-anim { animation: float 3s ease-in-out infinite; }
+.float-anim-slow { animation: float 5s ease-in-out infinite; }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+.pulse-anim { display: inline-block; animation: pulse 2s infinite; }
+
+.bounce-hover { transition: transform 0.2s ease; }
+.bounce-hover:hover { transform: translateY(-4px) scale(1.05); }
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+.shimmer-text {
+    background: linear-gradient(90deg, #f8fafc, #38bdf8, #f8fafc);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
+/* Soft Blink */
+@keyframes blinkSoft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+.blink-soft { animation: blinkSoft 2.5s infinite; }
+  
