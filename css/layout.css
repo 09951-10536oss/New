@@ -1,0 +1,28 @@
+.hero-section {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 60px 20px;
+    position: relative;
+    border-bottom: 1px solid #1e293b;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 30px 0;
+}
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.search-wrap {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+}
