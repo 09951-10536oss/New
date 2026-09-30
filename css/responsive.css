@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    .cart-drawer {
+        width: 100%;
+    }
+}
