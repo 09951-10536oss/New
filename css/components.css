@@ -1,0 +1,52 @@
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-primary {
+    background: linear-gradient(45deg, #0284c7, #38bdf8);
+    color: white;
+}
+.btn-success {
+    background: linear-gradient(45deg, #16a34a, #4ade80);
+    color: white;
+}
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+.search-input {
+    width: 100%;
+    padding: 14px 22px;
+    border-radius: 25px;
+    border: 2px solid #334155;
+    background: #1e293b;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+.search-input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: #94a3b8;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.filter-btn.active, .filter-btn:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+}
