@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tech Store - ร้านค้าออนไลน์แห่งอนาคต</title>
+    <!-- CSS External Files (11 Files) -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/product-card.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <h1 class="logo glow-text">✨ Modern<span class="highlight">Store</span></h1>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link bounce-hover">หน้าแรก</a>
+                <a href="#products" class="nav-link bounce-hover">สินค้าทั้งหมด</a>
+                <a href="about.html" class="nav-link bounce-hover">เกี่ยวกับเรา</a>
+            </nav>
+            <div class="cart-icon-wrapper" id="cartBtn">
+                <span class="cart-icon pulse-anim">🛒</span>
+                <span class="cart-count badge-bounce" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Animated Text -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2 class="hero-title typewriter-text">สัมผัสประสบการณ์ช้อปปิ้งระดับพรีเมียม</h2>
+            <p class="hero-subtitle fade-in-up">คัดสรรสินค้าคุณภาพกว่า 40 รายการ พร้อมโปรโมชันสุดพิเศษส่งตรงถึงบ้านคุณ</p>
+            <a href="#products" class="btn btn-primary pulse-hover float-anim">เลือกซื้อสินค้าเลย 🚀</a>
+        </div>
+    </section>
+
+    <!-- Main Content & Filters -->
+    <main class="container" id="products">
+        <div class="section-title-wrap">
+            <h2 class="section-title text-reveal">🛍️ สินค้าแนะนำสำหรับคุณ</h2>
+            <p class="section-desc fade-in-text">คลิกเลือกหมวดหมู่เพื่อค้นหาสินค้าที่ต้องการ</p>
+        </div>
+
+        <div class="filter-bar fade-in-left">
+            <button class="filter-btn active wave-effect" data-category="all">ทั้งหมด (40)</button>
+            <button class="filter-btn wave-effect" data-category="electronics">อิเล็กทรอนิกส์ (10)</button>
+            <button class="filter-btn wave-effect" data-category="fashion">แฟชั่น (10)</button>
+            <button class="filter-btn wave-effect" data-category="home">ของใช้ในบ้าน (10)</button>
+            <button class="filter-btn wave-effect" data-category="beauty">ความงาม & สุขภาพ (10)</button>
+        </div>
+
+        <div class="search-wrap fade-in-right">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 ค้นหานามสินค้า...">
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid"></div>
+    </main>
+
+    <!-- Modal Detail -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content pop-in">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>ตะกร้าสินค้าของคุณ 🛒</h3>
+            <button class="cart-close" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>ยอดรวมทั้งหมด:</span>
+                <span id="cartTotalPrice" class="total-price-anim">฿0</span>
+            </div>
+            <button class="btn btn-success btn-block shine-effect" id="checkoutBtn">ชำระเงินทันที 💳</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="about">
+        <div class="container footer-content">
+            <div class="footer-box float-anim-slow">
+                <h3 class="footer-title shimmer-text">ModernStore</h3>
+                <p>ศูนย์รวมสินค้าคุณภาพ หลากหลายหมวดหมู่ ตอบโจทย์ทุกไลฟ์สไตล์อย่างลงตัว</p>
+            </div>
+            <div class="footer-box">
+                <h4>ติดต่อเรา</h4>
+                <p>📧 Email: contact@modernstore.com</p>
+                <p>📞 โทร: 02-123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="blink-soft">© 2026 ModernStore Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Modular Scripts (7 Files + Data) -->
+    <script src="data/products.json.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/text-animations.js"></script>
+    <script src="js/product-renderer.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
